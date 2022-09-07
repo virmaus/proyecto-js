@@ -1,100 +1,91 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<title>Proyecto con JavaScript</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Proyecto con JavaScript</title>
 
-		<!-- Estilos CSS -->
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-		<link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
 
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-	
-		<!-- Moment -->
-		<script src="js/moment.min.js"></script>
-		<script src="js/es.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
 
-		<!-- Mis Scripts -->
-		<script type="text/javascript" src="js/main.js"></script>
-	</head>
-	<body>
-		<div id="selector-theme">
-			<div id="to-green"></div>
-			<div id="to-red"></div>
-			<div id="to-blue"></div>
-		</div>
+    <!-- Moment -->
+    <script src="js/moment.min.js"></script>
+    <script src="js/es.js"></script>
 
-		<section id="global">
+    <!-- Mis Scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="selector-theme">
+      <div id="to-green"></div>
+      <div id="to-red"></div>
+      <div id="to-blue"></div>
+    </div>
 
-			<!-- Cabecera -->
-			<header>
-				<div id="logo">
-					<h1>Proyecto JS</h1>
-				</div>
+    <section id="global">
+      <!-- Cabecera -->
+      <header>
+        <div id="logo">
+          <h1>Proyecto JS</h1>
+        </div>
 
-				<div class="clearfix"></div>
+        <div class="clearfix"></div>
 
-				<nav id="menu">
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="reloj.html">Reloj</a></li>
-						<li><a href="about.html">Sobre mi</a></li>
-						<li><a href="contact.html">Contacto</a></li>
-					</ul>
-				</nav>
-			</header>
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reloj.html">Reloj</a></li>
+            <li><a href="about.html">Sobre mi</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
 
+      <!-- Contenido -->
+      <section id="content">
+        <div id="box">
+          <!-- Cargar reloj -->
+          <div id="reloj"></div>
+        </div>
 
-			<!-- Contenido -->
-			<section id="content">
+        <aside id="sidebar">
+          <div id="about">
+            <h4><span>¿Quien soy?</span></h4>
+            <img src="img/caracol.jpg" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit
+              amet malesuada erat, ac ullamcorper justo.
+            </p>
+          </div>
 
-				<div id="box">
-					<!-- Cargar reloj -->
-					<div id="reloj"></div>
-				
-				</div>
+          <div id="login">
+            <h4><span>Identificate</span></h4>
+            <form>
+              <label for="name"> Nombre </label>
+              <input type="text" name="name" id="form_name" />
 
-				<aside id="sidebar">
-					<div id="about">
-						<h4><span>¿Quien soy?</span></h4>
-						<img src="img/caracol.jpg" />
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo.</p>
-					</div>
+              <label for="email"> Correo </label>
+              <input type="text" name="email" />
 
-					<div id="login">
-						<h4><span>Identificate</span></h4>
-						<form>
-							<label for="name">
-								Nombre
-							</label>
-							<input type="text" name="name" id="form_name"/>
+              <label for="password"> Contraseña </label>
+              <input type="password" name="password" />
 
-							<label for="email">
-								Correo
-							</label>
-							<input type="text" name="email" />
+              <input type="submit" value="Entrar" />
+            </form>
+          </div>
+        </aside>
 
-							<label for="password">
-								Contraseña
-							</label>
-							<input type="password" name="password" />
+        <div class="clearfix"></div>
+      </section>
+    </section>
 
-							<input type="submit" value="Entrar" />
-						</form>
-					</div>
+    <footer>
+      Master de JavaScript &copy;
 
-				</aside>
-
-				<div class="clearfix"></div>
-			</section>
-
-		</section>
-
-		<footer>
-			Master de JavaScript &copy;
-
-			<a href="#" class="subir">Ir arriba</a>
-		</footer>
-	</body>
+      <a href="#" class="subir">Ir arriba</a>
+    </footer>
+  </body>
 </html>
